@@ -1,0 +1,36 @@
+# 交付仓库忽略清单
+# 说明：本目录 1.3 GB，其中绝大部分是可再生的中间产物，GitHub 也拒绝 >100MB 的单文件。
+
+# 整包 zip（631 MB，超过 GitHub 单文件 100 MB 硬限制；内容就是本目录自身）
+思政课ppt.zip
+
+# 依赖与解包中间件
+**/node_modules/
+素材-v1/skills-unpacked/
+素材-v1/work-v3*/
+素材-v2/work*/
+素材-v1/out/
+素材-v2/out/
+__pycache__/
+
+# PowerPoint 锁文件
+~$*
+
+# 过程稿渲染图：只保留最终一轮 render-v3k（同伴无需装 PowerPoint 也能看片）
+素材-v1/render/
+素材-v1/render-probe/
+素材-v1/render-text/
+素材-v1/render-v3/
+素材-v1/render-v3b/
+素材-v1/render-v3c/
+素材-v1/render-v3d/
+素材-v1/render-v3e/
+素材-v1/render-v3f/
+素材-v1/render-v3g/
+素材-v1/render-v3h/
+素材-v1/render-v3i/
+素材-v1/render-v3j/
+素材-v1/render-v3l/
+素材-v1/_proof_*
+_qa/lowpass-*
+_qa/s0*-bc.png
